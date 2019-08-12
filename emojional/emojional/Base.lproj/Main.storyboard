@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="emojional" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79E-7S-mDW">
+                                <rect key="frame" x="8" y="173" width="145" height="172"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="134"/>
+                                <state key="normal" title="🤠"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G9Z-l5-NJ0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTo-hd-7Cn">
+                                <rect key="frame" x="20" y="535" width="156" height="172"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="134"/>
+                                <state key="normal" title="😁"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ED-dL-m2Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jd2-dN-75H">
+                                <rect key="frame" x="210" y="450" width="197" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="👁👅👁"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0za-oO-d3l"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="emojional!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGk-xq-4jh">
+                                <rect key="frame" x="46" y="322" width="296" height="84"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdB-EL-hvd" userLabel="TextContainer">
+                                <rect key="frame" x="260" y="66" width="145" height="172"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="134"/>
+                                <state key="normal" title="😞"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OKP-j6-WMQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="by: morgan pruitt 🥳" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lA3-2i-4YD">
+                                <rect key="frame" x="46" y="803" width="296" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tap the emoji that represents your mood!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dG8-gV-whU">
+                                <rect key="frame" x="43" y="401" width="329.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.54286276480625972" green="1" blue="0.88959043576982455" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jd2-dN-75H" secondAttribute="trailing" constant="7" id="1hb-nN-7Oa"/>
+                            <constraint firstItem="Jd2-dN-75H" firstAttribute="top" secondItem="dG8-gV-whU" secondAttribute="bottom" constant="27.5" id="3Pb-pA-6U6"/>
+                            <constraint firstItem="JTo-hd-7Cn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="46X-1w-8Mw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jd2-dN-75H" secondAttribute="bottom" constant="328" id="6va-Sx-d6U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nGk-xq-4jh" secondAttribute="trailing" constant="72" id="74R-x7-tlX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lA3-2i-4YD" secondAttribute="bottom" constant="28" id="7r5-Fr-Dbb"/>
+                            <constraint firstItem="79E-7S-mDW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="A2N-lA-jIX"/>
+                            <constraint firstItem="nGk-xq-4jh" firstAttribute="top" secondItem="79E-7S-mDW" secondAttribute="bottom" constant="-23" id="DYb-UM-B7s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dG8-gV-whU" secondAttribute="trailing" constant="41.5" id="HEI-VG-KF3"/>
+                            <constraint firstItem="JdB-EL-hvd" firstAttribute="leading" secondItem="79E-7S-mDW" secondAttribute="trailing" constant="107" id="Muv-mv-r04"/>
+                            <constraint firstItem="lA3-2i-4YD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="NBB-Ew-Rf8"/>
+                            <constraint firstItem="dG8-gV-whU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="P0o-Zr-Nrp"/>
+                            <constraint firstItem="79E-7S-mDW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="129" id="ReT-oy-U4I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JTo-hd-7Cn" secondAttribute="bottom" constant="155" id="Wf3-Pq-dLB"/>
+                            <constraint firstItem="Jd2-dN-75H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="210" id="b5p-YZ-sff"/>
+                            <constraint firstItem="nGk-xq-4jh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="fyD-wD-Q6K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JTo-hd-7Cn" secondAttribute="trailing" constant="238" id="id2-r7-ZHJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jd2-dN-75H" secondAttribute="trailing" constant="7" id="mvW-Zf-QVQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jd2-dN-75H" secondAttribute="trailing" constant="9" id="oQj-I3-91t"/>
+                            <constraint firstItem="JdB-EL-hvd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="piu-Ub-Xde"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+</document>
